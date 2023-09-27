@@ -10,7 +10,7 @@ try {
 if (!inFrame && !navigator.userAgent.includes("Firefox")) {
     const popup = open("about:blank", "_blank")
     if (!popup || popup.closed) {
-        alert("Please allow popups and redirects.")
+        alert("DISCLAIMER: If the page doesn't load, is slow, or becomes unresponsive, please allocate more computing power to this site by clearing your cache or closing chrome tabs. If the servers were down, you wouldn't be able to see this message.")
     } else {
         const doc = popup.document
         const iframe = doc.createElement("iframe")
